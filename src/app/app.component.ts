@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "../components/navbar/navbar.component";
 
@@ -10,6 +10,7 @@ import { NavbarComponent } from "../components/navbar/navbar.component";
 })
 export class AppComponent implements AfterViewInit {
   title = 'portfolio';
+  showScrollTop = false;
 
   ngOnInit() {
   const isDark = localStorage.getItem('theme') === 'dark';
@@ -32,5 +33,14 @@ export class AppComponent implements AfterViewInit {
         video.play();
       });
     }
+  }
+
+   @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    this.showScrollTop = window.scrollY > 300;
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

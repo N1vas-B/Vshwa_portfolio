@@ -12,6 +12,9 @@ import { RouterModule } from '@angular/router';
 export class NavbarComponent implements OnInit {
   isDarkMode = false;
   navbarOpen = false;
+  showHamburger = true;
+
+  private lastScrollTop = 0;
 
   constructor(private el: ElementRef) {}
 
@@ -50,5 +53,20 @@ export class NavbarComponent implements OnInit {
     if (!clickedInside && this.navbarOpen) {
       this.closeNavbar();
     }
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > this.lastScrollTop && currentScroll > 100) {
+      // scrolling down and not at top
+      this.showHamburger = false;
+    } else {
+      // scrolling up
+      this.showHamburger = true;
+    }
+
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
 }

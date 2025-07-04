@@ -23,8 +23,8 @@ export class ExperienceComponent {
     {
       id: 1,
       title: 'Web Development Intern',
-      company: 'Tech Solutions Inc.',
-      duration: 'Dec 2023 - June 2024',
+      company: 'OctaNetService Pvt Ltd.',
+      duration: 'Feb 2024 - March 2024',
       description: 'During my internship at Tech Solutions Inc., I gained hands-on experience in full-stack web development, working with modern frameworks and implementing modern web development best practices. The internship provided me with a solid foundation in web development fundamentals and enhanced my problem-solving skills in a professional environment.',
       achievements: [
         'Completed 30-day intensive web development internship with 100% attendance and task completion rate',
@@ -51,7 +51,7 @@ export class ExperienceComponent {
         'Optimized database queries resulting in 60% faster response times',
         'Mentored 2 junior interns in JavaScript and React development'
       ],
-      skills: ['React', 'Node.js', 'MongoDB', 'Express.js', 'TypeScript', 'AWS'],
+      skills: ['React', 'Node.js', 'MongoDB', 'Angular.js', 'TypeScript', 'Java','Springboot','MySQL'],
       keyAchievements: [
         'Successfully delivered 3 production-ready applications',
         'Improved application performance by 60% through optimization',
