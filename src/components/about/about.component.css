@@ -1,0 +1,285 @@
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+}
+section {
+  background: linear-gradient(to right, #2c3e50, #060606);
+  margin: 0;
+  padding: 2rem 0;
+  color: white;
+}
+.about-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  display: block;
+}
+/* Headings */
+.section-title{
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #f4f2f2;
+}
+
+h3 {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+h5 {
+  margin-top: 20px;
+  color: #0285c2;
+}
+
+/* Profile Image */
+.about-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive 4-column layout */
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05); /* Default glass tint (can override in dark mode) */
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(138, 43, 226, 0.15);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.skill-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 0.8rem;
+}
+
+.skill-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff; /* dark mode text */
+  margin: 0;
+}
+
+.skill-percent {
+  font-weight: bold;
+  color: #e9e9e9;
+  font-size: 0.95rem;
+}
+
+.skill-desc {
+  font-size: 0.85rem;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+.progress-wrapper {
+  margin-top: auto;
+}
+
+.progress-line {
+  width: 100%;
+  height: 5px;
+  background-color: #444;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #9c27b0; /* purple bar */
+  width: 0;
+  border-radius: 3px;
+  transition: width 0.6s ease-in-out;
+}
+
+/* ======= General Section Styling ======= */
+.services-section,
+.cards-row {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* ======= SERVICE CARDS ======= */
+.text-center {
+  text-align: center;
+}
+
+.text-purple {
+  color: #bb86fc;
+}
+
+/* h2 – Main Title */
+.services-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* h5 – Subheading */
+.services-section h5 {
+  font-size: 1.1rem;
+  color: #cccccc;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(138, 43, 226, 0.15);
+  cursor: pointer;
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #6e0fe3;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
+
+.service-number {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  opacity: 0.2;
+  font-weight: bold;
+}
+/* Container grid */
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  justify-items: center;
+}
+
+/* Individual block for heading + card */
+.card-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Headings outside cards */
+.goal-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ff79c6; /* or any highlight color */
+  text-align: center;
+}
+
+/* Card style */
+.card {
+  width: 100%;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(195, 0, 255, 0.1), 0 6px 14px rgba(255, 255, 255, 0.05);
+}
+
+/* Titles inside cards */
+.card-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Items inside the career card */
+.career-item {
+  margin-bottom: 1rem;
+}
+
+.career-item h6 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Interests/Hobbies list */
+.interests-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.interest-item {
+  font-size: 1rem;
+  color: #f3f3f3;
+}
+

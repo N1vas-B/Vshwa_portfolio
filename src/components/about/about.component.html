@@ -1,0 +1,121 @@
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">ABOUT ME</h2>
+
+    <!-- Image + About Text -->
+    <div class="about-content row align-items-center mb-5">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="../../assets/images/mylogo.jpg" alt="About Me" class="about-img" />
+      </div>
+      <div class="col-md-8">
+        <div class="about-text">
+          <h3>BENDADI VISWANIVAS</h3>
+          <p class="about-subtitle">
+            <i>A Full Stack Developer</i> with a strong foundation in both 
+            <span class="highlight" style="color: coral;"><i>Front-end</i></span> and 
+            <span class="highlight" style="color: coral;"><i>Back-end Development</i></span>. 
+            I specialize in building dynamic, responsive, and user-friendly web applications that deliver real-world value. 
+            I hold a <span class="highlight">Master's</span> degree in Computer Applications from Aurora's PG College, Hyderabad, and a 
+            <span class="highlight">B.Sc</span> degree in Computer Science from Priyadarshini Degree & PG College, Khammam. 
+            My passion lies in creating seamless digital experiences through clean code, scalable architectures, and continuous learning.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education & Contact -->
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h5>🎓 Education</h5>
+        <p><strong>MCA:</strong> Aurora's PG College, Osmania University, Hyderabad</p>
+        <p><strong>CGPA:</strong>7.34</p>
+        <p><strong>B.Sc:</strong> Priyadarshini Degree & Pg College, Khammam</p>
+        <p><strong>CGPA:</strong>7.0</p>
+        <P><strong>Intermediate:</strong>Sri Chaitanya Arts & Science Jr College, Khammam</P>
+        <p><strong>CGPA:</strong>80%</p>
+      </div>
+      <div class="col-md-6">
+        <h5>👤 Full Name & Contact</h5>
+        <p><strong>Name:</strong> Viswanivas Bendadi</p>
+        <p><strong>Age:</strong> 25</p>
+        <p><strong>Email:</strong> viswanivasbendadi29&#64;gmail.com</p>
+        <p><strong>Phone:</strong> 6301010726</p>
+        <p><strong>Location:</strong> Khammam, Telangana</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+  <h2 class="text-center">🛠️ Professional Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card" *ngFor="let skill of skills">
+      <div class="skill-header">
+        <img [src]="skill.icon" [alt]="skill.name" class="skill-img" />
+        <div class="skill-info">
+          <h3 class="skill-title">{{ skill.name }}</h3>
+          <span class="skill-percent">{{ skill.percentage }}%</span>
+        </div>
+      </div>
+
+      <p class="skill-desc">{{ skill.description }}</p>
+
+      <div class="progress-wrapper">
+        <div class="progress-line">
+          <div class="progress-fill" [ngStyle]="{ width: skill.percentage + '%' }"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Services Section -->
+  <div class="services-section">
+    <h2 class="text-center mb-4">What I Do For you</h2>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let service of services">
+        <div class="service-card">
+          <i class="bi {{ service.icon }} {service-icon}"></i>
+          <h5 class="service-title">{{ service.title }}</h5>
+          <p class="service-description">{{ service.description }}</p>
+          <span class="service-number">{{ service.number }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Row of 3 Cards -->
+<div class="cards-row">
+  <!-- Career Goals Block -->
+  <div class="card-block">
+    <h5 class="goal-heading">🎯 Career Goals</h5>
+    <div class="card">
+      <div *ngFor="let goal of careerGoals" class="career-item">
+        <h6>{{ goal.icon }} <span class="card-title">{{ goal.title }}</span></h6>
+        <p>{{ goal.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Personal Interests Block -->
+  <div class="card-block">
+    <h5 class="goal-heading">🤍 Personal Interests</h5>
+    <div class="card">
+      <div class="interests-wrapper">
+        <span *ngFor="let interest of personalInterests" class="interest-item">
+          {{ interest.icon }} <span>{{ interest.title }}</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hobbies Block -->
+  <div class="card-block">
+    <h5 class="goal-heading">🎯 Hobbies</h5>
+    <div class="card">
+      <div class="interests-wrapper">
+        <span *ngFor="let hobby of hobbies" class="interest-item">
+          {{ hobby.icon }} <span>{{ hobby.title }}</span>
+        </span>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+</section>
