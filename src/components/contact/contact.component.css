@@ -1,5 +1,5 @@
 .contact-background{
-  background: linear-gradient(to right, #2c3e50, #060606);
+  background: linear-gradient(to left,#2c3e50, #060606);
   min-height: 94.5vh;
   width: 100%;
   padding-top: 3rem;
@@ -10,7 +10,7 @@
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-top: -2%;
+  margin-top:4rem !important;
 }
 .social-media-section .connect-title{
   color: #f9f9fa;
@@ -152,23 +152,23 @@ button:hover {
 
 /* Platform Colors */
 .linkedin {
-  background: linear-gradient(45deg, #0077b5, #00a0dc);
+  background: linear-gradient(45deg, #002d46, #016d94);
 }
 
 .facebook {
-  background: linear-gradient(45deg, #3b5998, #8b9dc3);
+  background: linear-gradient(45deg, #04308f, #2552b4);
 }
 
 .instagram {
-  background: linear-gradient(45deg, #f94f4f, #fccc63);
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
 }
 
 .twitter {
-  background: linear-gradient(45deg, #1da1f2, #0d8ddb);
+  background: linear-gradient(45deg, #256994, #0b5989);
 }
 
 .github {
-  background: linear-gradient(45deg, #333, #555);
+  background: linear-gradient(45deg, #0c0c0c, #2c2c2c);
 }
 
 body.dark-mode .social-buttons .btn {

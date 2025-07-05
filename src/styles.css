@@ -41,12 +41,12 @@ body.dark-mode .navbar-content {
     display: flex;
   }
 }
-body.dark-mode .sidebar
+body.sidebar
 {
   position: fixed;
   top: 0;
-  left: -100%;
-  width: 50%;
+  left: -30%;
+  width: 20%;
   max-height: 100vh;
   background:transparent;
   color: white;
@@ -74,7 +74,7 @@ body.dark-mode .resume-btn:hover {
   box-shadow: 0 6px 16px rgba(255, 165, 0, 0.5);
 }
 body.dark-mode .section h2{
-  margin-top: -4.3%;
+  margin-top: 10%;
 }
 body.dark-mode .service-card:hover{
   transform: translateY(-5px);
@@ -136,9 +136,6 @@ body.dark-mode .experience-card .key-achievements li {
   color: #ffffff !important;
 }
 
-body.dark-mode .projects-section h2{
-margin-top: -4%;
-}
 body.dark-mode .project-background {
   background: transparent;
   min-height: 94vh;
@@ -210,8 +207,7 @@ body.dark-mode .section-title,
 body.dark-mode .section {
   color: white;
   background: transparent;
-  margin: 0;
-  padding: 2rem 0;
+  margin-bottom: 1rem;
 }
 
 /* Modal */
@@ -273,4 +269,13 @@ body.dark-mode .card:hover,
 body.dark-mode .service-card:hover{
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(195, 0, 255, 0.12), 0 6px 14px rgba(255, 255, 255, 0.07);
+}
+
+body.dark-mode .section-title{
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #f4f2f2;
+  margin-top: 10%;
 }

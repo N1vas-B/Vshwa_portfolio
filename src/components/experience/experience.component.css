@@ -1,5 +1,5 @@
 .experience-background{
-  background: linear-gradient(to right, #2c3e50, #060606);
+  background: linear-gradient(to left,#2c3e50, #060606);
    min-height: 94vh;
   width: 100%;
   padding-top: 3rem;
@@ -11,10 +11,13 @@
   max-width: 1200px;
   margin: 2% auto;
 }
-h2{
+.section-title{
   text-align: center;
+  font-size: 2rem !important;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 4rem !important;
   color: white;
-  margin-top:-2%;
 }
 .timeline-line {
   position: absolute;
